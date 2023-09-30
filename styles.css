@@ -11,8 +11,8 @@ body {
 }
 
 canvas {
-    width: auto;
-    max-height: 80vh; /* Limit the canvas height to 80% of the viewport height */
+    width: 120vh;
+    max-height: 67.5vh; /* Limit the canvas height to 80% of the viewport height */
     border: 1px solid #ccc;
 }
 
@@ -48,15 +48,41 @@ input[type="range"]::-webkit-slider-thumb {
 
 #downloadButton {
     margin-top: 20px;
+    margin-bottom: 20px;
     padding: 10px 20px;
     background-color: #007BFF;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 #downloadButton:disabled {
     background-color: #ccc;
     cursor: not-allowed;
+    
 }
+
+#imageInput{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#loadImageFromLink {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+

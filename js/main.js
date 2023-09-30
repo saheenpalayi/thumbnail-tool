@@ -27,6 +27,7 @@ function applyBlur() {
 
     // }
     if (imageUrl) {
+        image.crossOrigin = "anonymous";
         image.src = imageUrl;
         convertBlured();
     }
@@ -91,3 +92,14 @@ loadImageButton.addEventListener('click', () => {
 
     applyBlur();
 });
+
+// Add click event listener for the download button
+downloadButton.addEventListener('click', () => {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = outputCanvas.toDataURL('image/jpeg'); // Change to 'image/png' for PNG format
+    downloadLink.download = 'thumbnail.jpg'; // Change the filename as needed
+    downloadLink.click();
+});
+
+
+
