@@ -1,0 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image Processing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <input type="file" id="imageInput" accept="image/*">
+    <div class="link-input-container">
+        <label for="imageLink">Insert Image from URL:</label>
+        <input type="text" id="imageLink" placeholder="Enter image URL">
+        <button id="loadImageFromLink">Load</button>
+    </div>
+    <canvas id="outputCanvas"></canvas>
+    <div class="slider-container">
+        <label for="blurSlider">Blur Amount:</label>
+        <input type="range" id="blurSlider" min="0" max="50" step="1" value="10">
+    </div>
+    <button id="downloadButton" disabled>Download Image</button>
+    
+    <script type="module" src="./js/main.js"></script>
+    
+</body>
+
+</html>
